@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="pridat.php" method="POST">
         <input type="text" placeholder="Jméno autora" name="autor"><br>
         <input type="text" placeholder="Název knihy" name="kniha"><br>
         <label>Žánr:</label>
@@ -17,6 +17,7 @@
             <option value="Komedie">Komedie</option>
             <option value="Fantasy">Fantasy</option>
         </select>
+        <input type="submit" name="pridatKnihu">
     </form>
 </body>
 
