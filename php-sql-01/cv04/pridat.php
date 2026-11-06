@@ -6,4 +6,10 @@ $frakce = $_POST["frakce"];
 
 $sql = "INSERT INTO postavy_wow(jmeno_postavy, frakce) VALUES ('$jmeno', '$frakce')";
 $pridat = $conn->query($sql);
+
+if ($pridat === TRUE) {
+    // funkce PHP pro přesměrování mezi soubory
+    header("Location: index.php?pridano=1");
+    exit;
+}
 ?>

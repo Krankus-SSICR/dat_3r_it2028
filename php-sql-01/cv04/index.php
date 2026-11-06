@@ -6,6 +6,9 @@
     <title>Přidání postavy</title>
 </head>
 <body>
+    <?php if(isset($_GET["pridano"]) && $_GET["pridano"] == 1):?>
+        <p style="color: green;">Postava byla úspěšně přidána.</p>
+    <?php endif;?>
     <h2>Přidat postavu</h2>
     <form action="pridat.php" method="POST">
         <div>
